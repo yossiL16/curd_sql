@@ -1,0 +1,88 @@
+1:
+INSERT INTO student (Id, FullName, IdentityNumber, BirthDate, ClassId)
+VALUES
+(1, 'Jennifer Thomas', 999411611691, '04/07/2000', 2),
+(2, 'Michael Clark', 999494918151, '18/09/1991', 4)
+;
+
+
+2:
+INSERT INTO lecturers (LecturerName, Email)
+VALUES
+('John Smith', ' jsmith@university.edu.il' )
+;
+
+
+3:
+INSERT INTO hours_study (Id, ClassId, MorningLecturerId, AfternoonLecturerId)
+VALUES
+(1, 13, 42, 38),
+(2,38,17,25)
+;
+
+
+חלק ב
+
+4:
+select *
+from classes
+
+5:
+select LecturerName
+from lecturers
+WHERE LecturerName like 'm%'
+
+6:
+select FullName
+from student
+order by Id, FullName
+
+
+חלק ג
+
+7:
+UPDATE student
+SET FullName = 'James Smith'
+WHERE IdentityNumber = 999160426740
+
+8:
+UPDATE student
+SET FullName = 'James Smith' 
+WHERE IdentityNumber = 999160426740
+;
+
+9:
+UPDATE lecturers
+SET Email = 'noemail@school.com'
+WHERE Email LIKE ''
+;
+
+10:
+UPDATE student
+set age = 25
+;
+
+חלק ד
+
+11:
+DELETE from hours_study
+WHERE ClassId > 4
+;
+
+12:
+DELETE from student
+WHERE FullName = 'Laura Brown'
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
